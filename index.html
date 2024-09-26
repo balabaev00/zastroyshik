@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Застройщик частных домов</title>
+    <title>Уютный дом</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <div class="header-container container">
-            <h1>Застройщик Частных Домов</h1>
+            <h1>Уютный дом</h1>
             <nav>
                 <ul>
                     <li><a href="#services">Услуги</a></li>
@@ -31,53 +36,94 @@
         </div>
     </section>
 
+    <section id="about" class="container">
+        <h3>О нас</h3>
+        <p>Каждая семья рано или поздно мечтает о своем новом красивом доме в живописном месте. Мы воплощаем мечты в
+            реальность, с
+            2017 года строим красивые уютные дома из бруса.</p>
+    </section>
+
     <section id="services" class="container">
         <h3>Наши услуги</h3>
         <div class="services-grid">
             <div class="service">
                 <h4>Проектирование домов</h4>
                 <p>Индивидуальные проекты под ваши нужды и бюджет</p>
-                <img src="design.jpg" alt="Проектирование домов" class="service-image">
+                <img src="images/service/renovation.jpg" alt="Проектирование домов" class="service-image">
+            </div>
+            <div class="service">
+                <h4>Юридическое сопровождение</h4>
+                <p>Помощь в оформление ипотек</p>
+                <img src="images/service/ipoteka.jpg" alt="Оформление ипотеки" class="service-image">
             </div>
             <div class="service">
                 <h4>Строительство</h4>
                 <p>Высококачественное строительство домов под ключ</p>
-                <img src="construction.jpg" alt="Строительство" class="service-image">
-            </div>
-            <div class="service">
-                <h4>Ремонт и отделка</h4>
-                <p>Отделочные работы любой сложности с гарантиями</p>
-                <img src="renovation.jpg" alt="Ремонт и отделка" class="service-image">
+                <img src="images/service/construction.jpg" alt="Строительство" class="service-image">
             </div>
         </div>
     </section>
 
-
-    <section id="about" class="container">
-        <h3>О нас</h3>
-        <p>Мы – команда профессионалов с более чем 10-летним опытом в строительстве частных домов. Мы стремимся
-            предоставить нашим клиентам надёжные и качественные решения, соответствующие самым высоким стандартам.</p>
+    <section id="portfolio">
+        <h3>Наши работы</h3>
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3"
+            centered-slides="true" space-between="30" grab-cursor="true" loop="true" initial-slide="5">
+            <swiper-slide>
+                <img src="images/works/1.jpeg" alt="изображение">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/works/2.jpeg" alt="изображение">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/works/3.jpeg" alt="изображение">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/works/4.jpeg" alt="изображение">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/works/5.jpeg" alt="изображение">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/works/6.jpeg" alt="изображение">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/works/7.jpeg" alt="изображение">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/works/8.jpeg" alt="изображение">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="images/works/9.jpeg" alt="изображение">
+            </swiper-slide>
+        </swiper-container>
+        </div>
     </section>
+
+
 
     <section id="contact" class="container">
         <h3>Контакты</h3>
-        <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
-        <p>ИНН: 1234567890</p>
+        <p>ИП Бардаков Илья Владимирович</p>
+        <p>Телефон: <a href="tel:+79144906543">+7 (914) 490-65-43</a></p>
         <p>Реквизиты:</p>
         <ul>
-            <li>ОГРН: 1234567890123</li>
-            <li>Банк: Банк пример</li>
-            <li>Расчётный счёт: 40702810123456789012</li>
-            <li>Корр. счёт: 30101810100000000123</li>
-            <li>БИК: 044525123</li>
+            <li>ОГРН: 317753600003962</li>
+            <li>ИНН: 752401602737</li>
         </ul>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Застройщик частных домов. Все права защищены.</p>
+            <p>&copy; 2017-2024 Уютный дом. Все права защищены.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
+        const swiper = document.querySelector('.mySwiper');
+        swiper.initialSlide = 3; // Устанавливаем начальный слайд на третий
+        swiper.update(); // Обновляем Swiper
+    </script>
 </body>
+
 
 </html>

@@ -61,7 +61,7 @@ nav ul li a:hover {
 }
 
 #hero {
-    background: url('hero.jpg') no-repeat center center/cover;
+    background: url('images/hero.jpg') no-repeat center center/cover;
     color: #fff;
     height: 700px;
     display: flex;
@@ -134,6 +134,81 @@ nav ul li a:hover {
 #contact h3 {
     font-size: 2.2em;
     margin-bottom: 20px;
+}
+
+#about {
+    border-radius: 15px;
+    margin-top: 50px;
+    background-color: white;
+    /* Белый фон */
+    padding: 40px;
+    /* Отступы внутри контейнера */
+    text-align: center;
+    /* Центрирование текста */
+}
+
+#about h3 {
+    font-size: 2em;
+    /* Нормальный размер заголовка */
+    margin-bottom: 20px;
+    /* Отступ снизу для заголовка */
+}
+
+#about p {
+    font-size: 1.2em;
+    /* Размер текста */
+    line-height: 1.5;
+    /* Межстрочный интервал для улучшения читаемости */
+    max-width: 800px;
+    /* Максимальная ширина текста для лучшего восприятия */
+    margin: 0 auto;
+    /* Центрирование текста в контейнере */
+}
+
+#portfolio {
+    padding: 40px;
+    /* Отступы внутри контейнера */
+    text-align: center;
+    /* Центрирование текста */
+}
+
+#portfolio h3 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+swiper-container {
+    width: 100%;
+    /* Максимальная ширина слайдера для лучшего отображения */
+    margin: 0 auto;
+    /* Центрирование слайдера */
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Скрываем часть изображения, выходящую за пределы */
+    width: 100%;
+    /* Ширина слайда */
+    height: 500px;
+    /* Фиксированная высота для всех слайдов */
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    /* Ширина изображения 100% от слайда */
+    height: 100%;
+    /* Высота изображения 100% от слайда */
+    object-fit: cover;
+    /* Сохранение пропорций изображения */
+    object-position: center;
+    /* Центрируем изображение внутри слайда */
 }
 
 footer {
