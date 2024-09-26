@@ -78,21 +78,26 @@ nav ul li a:hover {
 #hero p {
     font-size: 1.5em;
 }
-
 #services {
     padding: 40px 0;
     text-align: center;
+    background-color: #f9f9f9;
+    /* Добавлен фон для раздела */
 }
 
 #services h3 {
     font-size: 2.2em;
     margin-bottom: 30px;
+    color: #333;
+    /* Цвет заголовка */
 }
 
 .services-grid {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    flex-wrap: wrap;
+    /* Позволяет элементам переноситься на новую строку */
 }
 
 .service {
@@ -100,31 +105,40 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1;
+    flex: 1 1 calc(33% - 30px);
+    /* Блоки занимают 1/3 ширины */
     display: flex;
     flex-direction: column;
-    /* Вертикальная компоновка */
     align-items: center;
-    /* Центрирование содержимого */
+    padding: 20px;
+    /* Добавлены внутренние отступы */
 }
 
 .service-image {
     width: 100%;
-    /* Ограничиваем ширину изображения */
-    height: 350px;
-    /* Обрезает изображение, сохраняя пропорции */
+    height: 200px;
+    /* Изменено для уменьшения высоты */
     object-fit: cover;
-    /* Отступ сверху для отделения от текста */
     margin-top: 15px;
+    border-radius: 5px;
+    /* Добавлен радиус границ для изображений */
 }
 
 .service h4 {
     font-size: 1.8em;
     margin-bottom: 15px;
+    color: #444;
+    /* Цвет заголовков услуги */
 }
 
 .service p {
     font-size: 1.2em;
+    color: #666;
+    /* Цвет текста для описания */
+    margin: 0;
+    /* Убран отступ по умолчанию */
+    line-height: 1.4;
+    /* Увеличен межстрочный интервал для читаемости */
 }
 
 #contact {
