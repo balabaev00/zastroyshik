@@ -118,10 +118,11 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
         const swiper = document.querySelector('.mySwiper');
-        swiper.initialSlide = 3; // Устанавливаем начальный слайд на третий
-        swiper.params.breakpoints = {
+
+        swiper.breakpoints = {
             640: {
                 slidesPerView: 1, // 1 слайд на экранах меньше 640px
             },
@@ -133,7 +134,7 @@
             },
         };
 
-        swiper.update(); // Обновляем Swiper
+        swiper.swiper.slideTo(3); // Пример обновления — переключение на первый слайд
     </script>
 </body>
 
