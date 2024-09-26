@@ -66,8 +66,8 @@
 
     <section id="portfolio">
         <h3>Наши работы</h3>
-        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3"
-            centered-slides="true" space-between="30" grab-cursor="true" loop="true" initial-slide="5">
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" centered-slides="true"
+            space-between="30" grab-cursor="true" loop="true">
             <swiper-slide>
                 <img src="images/works/1.jpeg" alt="изображение">
             </swiper-slide>
@@ -121,6 +121,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
         const swiper = document.querySelector('.mySwiper');
         swiper.initialSlide = 3; // Устанавливаем начальный слайд на третий
+        swiper.params.breakpoints = {
+            640: {
+                slidesPerView: 1, // 1 слайд на экранах меньше 640px
+            },
+            768: {
+                slidesPerView: 2, // 2 слайда на экранах меньше 768px
+            },
+            1024: {
+                slidesPerView: 3, // 3 слайда на экранах меньше 1024px
+            },
+        };
+
         swiper.update(); // Обновляем Swiper
     </script>
 </body>
