@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    /* Выровнять заголовок и меню по краям */
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+#hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.5em;
+}
+
+#services {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#services h3 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* Вертикальная компоновка */
+    align-items: center;
+    /* Центрирование содержимого */
+}
+
+.service-image {
+    width: 100%;
+    /* Ограничиваем ширину изображения */
+    height: 350px;
+    /* Обрезает изображение, сохраняя пропорции */
+    object-fit: cover;
+    /* Отступ сверху для отделения от текста */
+    margin-top: 15px;
+}
+
+.service h4 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 1.2em;
+}
+
+#contact {
+    padding: 40px 0;
+}
+
+#contact h3 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+    }
+
+    #hero h2 {
+        font-size: 2.2em;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+    }
+
+    .services-grid {
+        flex-direction: column;
+    }
+
+    .service {
+        margin-bottom: 20px;
+    }
+
+    #contact h3 {
+        font-size: 1.8em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
